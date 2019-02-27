@@ -1,0 +1,24 @@
+<!-- <table>
+    <% for(var i=0; i < content.length; i++) 
+    { %>
+           <tr>
+             <td><%= content[i].name %></td> 
+               <td><%= content[i].code%></td>
+               
+            
+           </tr>
+    <% }
+    %>
+ </table> -->
+ <h2 style="color:blueviolet">Select a country to get it's code</h2>
+ <select style=" color:red" >
+        <%for(var i=0; i < content.length; i++) { %>
+            <option  style=" color: deeppink"><%= content[i].name%> --> <%= content[i].code%></option>
+           
+       <% }%>              
+</select>
+
+<!-- var q=content.indexOf( 'value' )
+
+
+<h4>country code is content[q].code</h4> -->
