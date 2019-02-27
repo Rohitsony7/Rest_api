@@ -13,12 +13,6 @@ const port = 4200
 
  app.METHOD(PATH, HANDLER) */
 
-//  app.all('/secret' ,function (req, res, next) {
-//     console.log('Accessing the secret section ...')
-//     next() // pass control to the next handler
-//     console.log(content)
-//     res.send('Hello world')
-//   })
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.get('/', (req, res) => res.render('index', {'content': content}))
